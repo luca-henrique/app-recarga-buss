@@ -10,18 +10,26 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@hookform/resolvers": "^2.8.10",
     "@types/styled-components": "^5.1.25",
+    "babel-plugin-inline-import": "^3.0.0",
     "react": "17.0.2",
+    "react-hook-form": "^7.31.1",
     "react-native": "0.68.1",
     "react-native-linear-gradient": "^2.5.6",
-    "styled-components": "^5.3.5"
+    "react-native-svg": "^12.3.0",
+    "react-native-svg-transformer": "^1.0.0",
+    "styled-components": "^5.3.5",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",
     "@babel/runtime": "^7.17.9",
     "@react-native-community/eslint-config": "^3.0.1",
     "@types/react-native": "^0.67.7",
+    "babel-eslint": "^10.1.0",
     "babel-jest": "^28.1.0",
+    "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^8.15.0",
     "jest": "^28.1.0",
     "metro-react-native-babel-preset": "^0.70.3",
