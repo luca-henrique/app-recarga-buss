@@ -8,6 +8,8 @@ import {Container, StyledContainer} from '../../components/atoms/Container';
 import CardInformationsDashboard from '../../components/molecules/CardInformationsDashboard';
 import PurchaseHistoric from '../../components/organisms/PurchaseHistoric';
 
+import SignOut from '../SignOut';
+
 function Home({navigation}) {
   const [user, setUser] = useState('Lucas');
   const [currentBalance, setCurrentBalance] = useState(390);
@@ -28,6 +30,8 @@ function Home({navigation}) {
       <View style={{padding: 16}} />
 
       <PurchaseHistoric />
+
+      <SignOut navigation={navigation} />
     </Container>
   );
 }

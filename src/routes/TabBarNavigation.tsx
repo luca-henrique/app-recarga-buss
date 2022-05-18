@@ -10,6 +10,7 @@ import {COLORS} from '../common';
 import Dashboard from '../screens/Dashboard';
 import Tariff from '../screens/Tariff';
 import PurchasePass from '../screens/PurchasePass';
+import SignOut from '../screens/SignOut';
 
 const Tab = createBottomTabNavigator();
 
@@ -49,6 +50,20 @@ const TabBarNavigation = () => {
         options={{
           tabBarIcon: () => <TabBarIcon icon="history-icon" label="recarga" />,
         }}
+      />
+
+      <Tab.Screen
+        name="Sair"
+        component={SignOut}
+        options={{
+          tabBarIcon: props => <TabBarIcon icon="leave-icon" label="sair" />,
+        }}
+        listeners={({navigation}) => ({
+          tabPress: e => {
+            e.preventDefault();
+            disaptch(openModalSignOut());
+          },
+        })}
       />
     </Tab.Navigator>
   );
