@@ -4,6 +4,7 @@ export const COLORS = {
   'green-dark': '#1C3B22',
   'green-800': '#2A2B2B',
 
+  white: '#fff',
   'white-light': '#FAFCFB',
   'white-default': '#F2F7F4',
   'white-dark': '#E9F0EB',
