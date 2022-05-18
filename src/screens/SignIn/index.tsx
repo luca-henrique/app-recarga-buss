@@ -15,13 +15,7 @@ import {useForm} from 'react-hook-form';
 
 const schema = yup
   .object({
-    cpf: yup
-      .string()
-      .required(messages.required)
-      .matches(
-        /^([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}|[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2})$/,
-        'Informe um CPF valido',
-      ),
+    cpf: yup.string().required(messages.required),
     password: yup
       .string()
       .min(6, messages.min6)
@@ -58,9 +52,11 @@ const SignIn = ({navigation}: any) => {
         error={errors?.cpf}
         keyboardType="numeric"
         maxLength={11}
+        mask
+        type="cpf"
       />
 
-      <View style={{padding: 8}} />
+      <View style={{padding: 4}} />
 
       <TextInput
         label="SENHA"
