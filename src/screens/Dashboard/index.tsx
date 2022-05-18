@@ -10,7 +10,7 @@ import PurchaseHistoric from '../../components/organisms/PurchaseHistoric';
 
 import SignOut from '../SignOut';
 
-function Home({navigation}) {
+const Home = ({navigation}: any) => {
   const [user, setUser] = useState('Lucas');
   const [currentBalance, setCurrentBalance] = useState(390);
   const [ticket, setTicket] = useState(30);
@@ -34,6 +34,6 @@ function Home({navigation}) {
       <SignOut navigation={navigation} />
     </Container>
   );
-}
+};
 
 export default Home;

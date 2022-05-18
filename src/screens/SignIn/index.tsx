@@ -30,7 +30,7 @@ const schema = yup
   })
   .required();
 
-function SignIn({navigation}) {
+const SignIn = ({navigation}: any) => {
   const {
     setValue,
     handleSubmit,
@@ -48,7 +48,7 @@ function SignIn({navigation}) {
 
   return (
     <Container justify="center" align="center" padding={30}>
-      <Label color="green-dark">Recardbus</Label>
+      <Label color="green-dark">RecargaBuss</Label>
 
       <View style={{padding: 26}} />
 
@@ -56,6 +56,8 @@ function SignIn({navigation}) {
         label="CPF (Somente números)"
         onChangeText={text => setValue('cpf', text)}
         error={errors?.cpf}
+        keyboardType="numeric"
+        maxLength={11}
       />
 
       <View style={{padding: 8}} />
@@ -75,7 +77,7 @@ function SignIn({navigation}) {
         </ButtonText>
       </StyledContainer>
 
-      <View style={{padding: 12}} />
+      <View style={{padding: 8}} />
 
       <Button
         onPress={handleSubmit(data => {
@@ -85,7 +87,7 @@ function SignIn({navigation}) {
         Entrar
       </Button>
 
-      <View style={{padding: 20}} />
+      <View style={{padding: 8}} />
 
       <StyledContainer align="center">
         <Label color="gray-400" variant="body1">
@@ -102,6 +104,6 @@ function SignIn({navigation}) {
       </StyledContainer>
     </Container>
   );
-}
+};
 
 export default SignIn;
