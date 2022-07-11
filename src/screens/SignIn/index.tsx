@@ -9,7 +9,6 @@ import TextInput from '../../components/atoms/Input';
 import {View} from 'react-native';
 
 import * as yup from 'yup';
-
 import {yupResolver} from '@hookform/resolvers/yup';
 import {useForm} from 'react-hook-form';
 
@@ -68,7 +67,7 @@ const SignIn = ({navigation}: any) => {
       <View style={{padding: 4}} />
 
       <StyledContainer align="flex-end">
-        <ButtonText onPress={() => navigation.navigate('Recovery')}>
+        <ButtonText onPress={() => navigation.navigate('RecoveryAccount')}>
           Esqueceu a senha?
         </ButtonText>
       </StyledContainer>

@@ -12,16 +12,30 @@ import * as yup from 'yup';
 import {yupResolver} from '@hookform/resolvers/yup';
 import {useForm} from 'react-hook-form';
 
-import RadioForm from 'react-native-simple-radio-button';
-
-var radio_props = [
-  {label: 'Estudantil', value: 0},
-  {label: 'Expresso', value: 1},
-];
-
 const schema = yup
   .object({
     name: yup.string(),
+    cpf: yup
+      .string()
+      .required(messages.required)
+      .matches(
+        /^([0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}|[0-9]{2}\.?[0-9]{3}\.?[0-9]{3}\/?[0-9]{4}\-?[0-9]{2})$/,
+        'Informe um CPF valido',
+      ),
+    password: yup
+      .string()
+      .min(6, messages.min6)
+      .max(20, messages.max20)
+      .required(messages.required),
+    passwordConfirmation: yup
+      .string()
+      .test(
+        'passwords-match',
+        'As senhas devem se corresponder',
+        function (value) {
+          return this.parent.password === value;
+        },
+      ),
   })
   .required();
 
@@ -40,7 +54,7 @@ function SignIn({navigation}) {
   }, [register]);
 
   return (
-    <Container justify="center" padding={30}>
+    <Container align="center" padding={30}>
       <StyledContainer direction="row" align="center">
         <IconButton
           height={21}
@@ -50,33 +64,23 @@ function SignIn({navigation}) {
           }}
         />
         <View style={{padding: 8}} />
-        <Label color="green-dark">Criar conta</Label>
+        <Label color="green-dark">Recuperar Conta</Label>
       </StyledContainer>
-
-      <View style={{padding: 30}} />
 
       <TextInput
-        label="Instituição de ensino"
-        onChangeText={text => setValue('name', text)}
-        error={errors?.name}
+        label="E-MAIL"
+        onChangeText={text => setValue('password', text)}
+        error={errors?.password}
       />
 
-      <StyledContainer color="white-light" padding={20}>
-        <RadioForm
-          radio_props={radio_props}
-          initial={0}
-          onPress={value => {}}
-          buttonColor={'#4EA45D'}
-          buttonWrapStyle={{marginBottom: 20}}
-        />
-      </StyledContainer>
+      <View style={{padding: 22}} />
 
       <Button
         name="Exemple"
         onPress={handleSubmit(data => {
           console.log(data);
         })}>
-        Criar
+        Enviar código
       </Button>
     </Container>
   );

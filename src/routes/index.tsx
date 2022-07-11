@@ -6,6 +6,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Splash from '../screens/Splash';
 import SignIn from '../screens/SignIn';
 import SignUp from '../screens/SignUp';
+import RecoveryAccount from '../screens/RecoveryAccount';
 
 import DashboardTabBarNavigation from './TabBarNavigation';
 
@@ -22,6 +23,7 @@ const App = () => {
         <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="SignIn" component={SignIn} />
         <Stack.Screen name="SignUp" component={SignUp} />
+        <Stack.Screen name="RecoveryAccount" component={RecoveryAccount} />
         <Stack.Screen name="Dashboard" component={DashboardTabBarNavigation} />
       </Stack.Navigator>
     </NavigationContainer>
