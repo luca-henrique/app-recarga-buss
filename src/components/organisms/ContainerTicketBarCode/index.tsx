@@ -2,7 +2,7 @@ import React from 'react';
 import {COLORS} from '../../../common';
 import {View} from 'react-native';
 import Modal from 'react-native-modal';
-import Label from '../../atoms/Label';
+import Label from '../../atoms/Typography';
 import Barcode from '@kichiyaki/react-native-barcode-generator';
 import {Dimensions} from 'react-native';
 import Button from '../../atoms/Button/Contained';

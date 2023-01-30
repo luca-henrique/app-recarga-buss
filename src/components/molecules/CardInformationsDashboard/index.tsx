@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyledContainer} from '../../atoms/Container';
-import Label from '../../atoms/Label/';
+import Label from '../../atoms/Typography';
 import {View} from 'react-native';
 
 const CardInformationsDashboard = ({text, value, type}: any) => {

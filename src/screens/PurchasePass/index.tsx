@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import {View} from 'react-native';
 
-import Label from '../../components/atoms/Label';
+import Label from '../../components/atoms/Typography';
 import {Container, StyledContainer} from '../../components/atoms/Container';
 
 import TextInput from '../../components/atoms/Input';

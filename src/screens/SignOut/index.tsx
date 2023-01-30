@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {COLORS} from '../../common';
 import {View} from 'react-native';
 import Modal from 'react-native-modal';
-import Label from '../../components/atoms/Label';
+import Label from '../../components/atoms/Typography';
 
 import Button from '../../components/atoms/Button/Contained';
 import {StyledContainer} from '../../components/atoms/Container';

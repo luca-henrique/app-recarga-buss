@@ -3,7 +3,7 @@ import React from 'react';
 import {View} from 'react-native';
 
 import {Container} from '../../atoms/Container';
-import Label from '../../atoms/Label';
+import Label from '../../atoms/Typography';
 
 import HeaderPurchasesHistory from '../../molecules/HeaderPurchasesHistory';
 import ShoppingListHistory from '../../molecules/ShoppingListHistory';

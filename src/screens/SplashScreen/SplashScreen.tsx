@@ -1,14 +1,18 @@
 import React from 'react';
 
-import Label from '../../components/atoms/Label';
+import {useNavigationHook} from '../../hooks';
+
+import {} from '../../components';
+
+import Label from '../../components/atoms/Typography';
 import {LinearGradientContainer} from '../../components/atoms/Container';
 
-export const SplashScreen = ({navigation}: any) => {
-  const initial = setTimeout(() => {
-    navigation.navigate('SignIn');
-  }, 5000);
+export const SplashScreen = () => {
+  const {navigation} = useNavigationHook();
 
-  clearTimeout(initial);
+  setTimeout(() => {
+    navigation('SignIn');
+  }, 3000);
 
   return (
     <LinearGradientContainer justify="center" align="center">

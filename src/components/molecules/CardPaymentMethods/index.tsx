@@ -3,7 +3,7 @@ import {View} from 'react-native';
 import {ContainerCardPaymentMethods} from './style';
 import {StyledContainer} from '../../atoms/Container';
 import Icon from '../../atoms/Icon';
-import Label from '../../atoms/Label';
+import Label from '../../atoms/Typography';
 
 import ContainerTicketBarCode from '../../organisms/ContainerTicketBarCode/index';
 import ContainerCardPayment from '../../organisms/ContainerCardPayment';

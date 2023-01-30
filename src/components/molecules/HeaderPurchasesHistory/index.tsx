@@ -3,7 +3,7 @@ import {Picker} from '@react-native-picker/picker';
 
 import {COLORS} from '../../../common';
 import {StyledContainer} from '../../../components/atoms/Container';
-import Label from '../../../components/atoms/Label';
+import Label from '../../atoms/Typography';
 
 const statusPayment = [
   {label: 'Mais recentes', value: 'mais recentes'},
