@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 
-import {messages} from '../../../validations/messages';
+import {messages} from '../../../locale';
 import Label from '../../../components/atoms/Label';
 import {Container, StyledContainer} from '../../../components/atoms/Container';
 import Button from '../../../components/atoms/Button/Contained';

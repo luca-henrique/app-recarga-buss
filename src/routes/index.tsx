@@ -3,7 +3,8 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import Splash from '../screens/Splash';
+import {SplashScreen} from '../screens';
+
 import SignIn from '../screens/SignIn';
 import SignUp from '../screens/SignUp';
 import RecoveryAccount from '../screens/RecoveryAccount';
@@ -20,7 +21,8 @@ const App = () => {
         screenOptions={{
           headerShown: false,
         }}>
-        <Stack.Screen name="Splash" component={Splash} />
+        <Stack.Screen name="Splash" component={SplashScreen} />
+
         <Stack.Screen name="SignIn" component={SignIn} />
         <Stack.Screen name="SignUp" component={SignUp} />
         <Stack.Screen name="RecoveryAccount" component={RecoveryAccount} />

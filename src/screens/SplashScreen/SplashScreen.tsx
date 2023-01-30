@@ -3,12 +3,12 @@ import React from 'react';
 import Label from '../../components/atoms/Label';
 import {LinearGradientContainer} from '../../components/atoms/Container';
 
-const Splash = ({navigation}: any) => {
-  setTimeout(Loading, 3000);
-
-  function Loading() {
+export const SplashScreen = ({navigation}: any) => {
+  const initial = setTimeout(() => {
     navigation.navigate('SignIn');
-  }
+  }, 5000);
+
+  clearTimeout(initial);
 
   return (
     <LinearGradientContainer justify="center" align="center">
@@ -16,5 +16,3 @@ const Splash = ({navigation}: any) => {
     </LinearGradientContainer>
   );
 };
-
-export default Splash;
