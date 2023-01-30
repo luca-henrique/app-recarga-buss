@@ -2,10 +2,10 @@ import React, {useState, useEffect} from 'react';
 import {COLORS} from '../../common';
 import {View} from 'react-native';
 import Modal from 'react-native-modal';
-import Label from '../../components/atoms/Typography';
+import Label from '../../components/atoms/Typography/Typography';
 
 import Button from '../../components/atoms/Button/Contained';
-import {StyledContainer} from '../../components/atoms/Container';
+import {StyledContainer} from '../../components/atoms/Container/Container';
 import ButtonOutiline from '../../components/atoms/Button/Outiline/index';
 
 import {useDispatch, useSelector} from 'react-redux';

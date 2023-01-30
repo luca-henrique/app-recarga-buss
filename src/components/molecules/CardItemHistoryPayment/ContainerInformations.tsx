@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {StyledContainer} from '../../atoms/Container';
+import {StyledContainer} from '../../atoms/Container/Container';
 
 import ContainerDate from './ContainerDate';
 import PriceInformation from './ContainerBasicInformation';

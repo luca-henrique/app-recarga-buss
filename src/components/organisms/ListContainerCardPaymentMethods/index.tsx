@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {StyledContainer} from '../../atoms/Container';
+import {StyledContainer} from '../../atoms/Container/Container';
 import CardPaymentMethod from '../../molecules/CardPaymentMethods';
 
 const methodsPayments = [
@@ -20,7 +20,7 @@ const methodsPayments = [
 const ListContainerCardPaymentMethods = () => {
   const [selectedCard, setSelectedCard] = useState(false);
 
-  const ListCardsPaymentsMethods = methodsPayments.map((method) => {
+  const ListCardsPaymentsMethods = methodsPayments.map(method => {
     return (
       <CardPaymentMethod
         icon={method.icon}

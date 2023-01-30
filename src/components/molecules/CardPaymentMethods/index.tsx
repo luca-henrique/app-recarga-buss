@@ -1,9 +1,9 @@
 import React from 'react';
 import {View} from 'react-native';
 import {ContainerCardPaymentMethods} from './style';
-import {StyledContainer} from '../../atoms/Container';
+import {StyledContainer} from '../../atoms/Container/Container';
 import Icon from '../../atoms/Icon';
-import Label from '../../atoms/Typography';
+import {Typography} from '../../atoms/Typography/Typography';
 
 import ContainerTicketBarCode from '../../organisms/ContainerTicketBarCode/index';
 import ContainerCardPayment from '../../organisms/ContainerCardPayment';
@@ -44,11 +44,11 @@ const CardPaymentMethod = ({icon, text, selected, changerSelected}) => {
           align="center">
           <Icon icon={icon} width={30} height={30} />
           <View style={{padding: 4}} />
-          <Label
+          <Typography
             color={selected ? 'white-default' : 'gray-800'}
             variant="body2">
             {text}
-          </Label>
+          </Typography>
         </StyledContainer>
 
         <ContainerTicketBarCode />

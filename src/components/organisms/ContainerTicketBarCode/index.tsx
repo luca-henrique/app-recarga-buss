@@ -2,7 +2,7 @@ import React from 'react';
 import {COLORS} from '../../../common';
 import {View} from 'react-native';
 import Modal from 'react-native-modal';
-import Label from '../../atoms/Typography';
+import {Typography} from '../..';
 import Barcode from '@kichiyaki/react-native-barcode-generator';
 import {Dimensions} from 'react-native';
 import Button from '../../atoms/Button/Contained';
@@ -34,9 +34,9 @@ export default function ContainerBarCode() {
             borderTopRightRadius: 32,
             padding: 30,
           }}>
-          <Label color="gray-800" variant="h3">
+          <Typography color="gray-800" variant="h3">
             Codigo de Barras
-          </Label>
+          </Typography>
 
           <View style={{padding: 10}} />
 

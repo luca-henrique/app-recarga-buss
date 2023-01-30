@@ -2,8 +2,8 @@ import React from 'react';
 
 import {View} from 'react-native';
 
-import {Container} from '../../atoms/Container';
-import Label from '../../atoms/Typography';
+import {Container} from '../../atoms/Container/Container';
+import Label from '../../atoms/Typography/Typography';
 
 import HeaderPurchasesHistory from '../../molecules/HeaderPurchasesHistory';
 import ShoppingListHistory from '../../molecules/ShoppingListHistory';

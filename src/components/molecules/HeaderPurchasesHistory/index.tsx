@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import {Picker} from '@react-native-picker/picker';
 
 import {COLORS} from '../../../common';
-import {StyledContainer} from '../../../components/atoms/Container';
-import Label from '../../atoms/Typography';
+import {StyledContainer} from '../../atoms/Container/Container';
+import {Typography} from '../../';
 
 const statusPayment = [
   {label: 'Mais recentes', value: 'mais recentes'},
@@ -21,9 +21,9 @@ const HeaderPurchasesHistory = () => {
   });
   return (
     <StyledContainer direction="row" align="flex-end" justify="space-between">
-      <Label color="gray-100" variant="body2">
+      <Typography color="gray-100" variant="body2">
         40 transações
-      </Label>
+      </Typography>
       <Picker
         selectedValue={selectedValue}
         style={{

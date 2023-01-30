@@ -1,8 +1,11 @@
 import React, {useEffect} from 'react';
 
 import {messages} from '../../../locale';
-import Label from '../../../components/atoms/Typography';
-import {Container, StyledContainer} from '../../../components/atoms/Container';
+import {Typography} from '../../../components/atoms/Typography/Typography';
+import {
+  Container,
+  StyledContainer,
+} from '../../../components/atoms/Container/Container';
 import Button from '../../../components/atoms/Button/Contained';
 import IconButton from '../../../components/atoms/Button/Icon';
 import TextInput from '../../../components/atoms/Input';
@@ -12,11 +15,7 @@ import * as yup from 'yup';
 import {yupResolver} from '@hookform/resolvers/yup';
 import {useForm} from 'react-hook-form';
 
-import RadioForm, {
-  RadioButton,
-  RadioButtonInput,
-  RadioButtonLabel,
-} from 'react-native-simple-radio-button';
+import RadioForm from 'react-native-simple-radio-button';
 
 const schema = yup
   .object({
@@ -78,7 +77,7 @@ function SignIn({navigation}) {
           }}
         />
         <View style={{padding: 8}} />
-        <Label color="green-dark">Criar conta</Label>
+        <Typography color="green-dark">Criar conta</Typography>
       </StyledContainer>
 
       <View style={{padding: 30}} />

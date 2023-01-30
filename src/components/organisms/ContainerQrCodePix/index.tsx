@@ -2,18 +2,15 @@ import React from 'react';
 import {COLORS} from '../../../common';
 import {View} from 'react-native';
 import Modal from 'react-native-modal';
-import Label from '../../atoms/Typography';
+import {Typography} from '../../atoms/Typography/Typography';
 
 import Button from '../../atoms/Button/Contained';
 
 import QRCode from 'react-native-qrcode-svg';
-import {StyledContainer} from '../../atoms/Container';
+import {StyledContainer} from '../../atoms/Container/Container';
 
 import {useDispatch, useSelector} from 'react-redux';
-import {
-  closeModalQrCodePix,
-  openModalQrCodePix,
-} from '../../../store/modules/pruchase/actions';
+import {closeModalQrCodePix} from '../../../store/modules/pruchase/actions';
 
 export default function ContainerBarCode() {
   const pixCode = '111.185.464-58';
@@ -46,9 +43,9 @@ export default function ContainerBarCode() {
             borderTopRightRadius: 32,
             padding: 30,
           }}>
-          <Label color="gray-800" variant="h3">
+          <Typography color="gray-800" variant="h3">
             QrCode
-          </Label>
+          </Typography>
 
           <View style={{padding: 14}} />
 
@@ -64,9 +61,9 @@ export default function ContainerBarCode() {
               logoBackgroundColor="yellow"
             />
             <View style={{padding: 6}} />
-            <Label color="gray-800" variant="body1">
+            <Typography color="gray-800" variant="body1">
               {pixCode}
-            </Label>
+            </Typography>
           </StyledContainer>
 
           <View style={{padding: 20}} />

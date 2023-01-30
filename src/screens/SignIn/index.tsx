@@ -1,8 +1,11 @@
 import React, {useEffect} from 'react';
 
 import {messages} from '../../locale';
-import Label from '../../components/atoms/Typography';
-import {Container, StyledContainer} from '../../components/atoms/Container';
+import {Typography} from '../../components';
+import {
+  Container,
+  StyledContainer,
+} from '../../components/atoms/Container/Container';
 import Button from '../../components/atoms/Button/Contained';
 import ButtonText from '../../components/atoms/Button/Text';
 import TextInput from '../../components/atoms/Input';
@@ -41,12 +44,12 @@ const SignIn = ({navigation}: any) => {
 
   return (
     <Container justify="center" align="center" padding={30}>
-      <Label color="green-dark">RecargaBuss</Label>
+      <Typography color="green-dark">RecargaBuss</Typography>
 
       <View style={{padding: 26}} />
 
       <TextInput
-        label="CPF (Somente números)"
+        Typography="CPF (Somente números)"
         onChangeText={text => setValue('cpf', text)}
         error={errors?.cpf}
         keyboardType="numeric"
@@ -58,7 +61,7 @@ const SignIn = ({navigation}: any) => {
       <View style={{padding: 4}} />
 
       <TextInput
-        label="SENHA"
+        Typography="SENHA"
         secureTextEntry={true}
         onChangeText={text => setValue('password', text)}
         error={errors?.password}
@@ -85,9 +88,9 @@ const SignIn = ({navigation}: any) => {
       <View style={{padding: 8}} />
 
       <StyledContainer align="center">
-        <Label color="gray-400" variant="body1">
+        <Typography color="gray-400" variant="body1">
           Ainda não possui uma conta?
-        </Label>
+        </Typography>
 
         <View style={{padding: 6}} />
 

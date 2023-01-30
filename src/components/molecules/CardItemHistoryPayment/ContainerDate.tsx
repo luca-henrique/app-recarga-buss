@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Label from '../../atoms/Typography';
-import {StyledContainer} from '../../atoms/Container';
+import Label from '../../atoms/Typography/Typography';
+import {StyledContainer} from '../../atoms/Container/Container';
 
 const DateInformation = ({item}) => {
   return (

@@ -5,13 +5,23 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 import {SplashScreen} from '../screens';
 
-import SignIn from '../screens/SignIn';
-import SignUp from '../screens/SignUp';
-import RecoveryAccount from '../screens/RecoveryAccount';
-
-import DashboardTabBarNavigation from './TabBarNavigation';
-
 const Stack = createNativeStackNavigator();
+
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator
+        initialRouteName="Splash"
+        screenOptions={{
+          headerShown: false,
+        }}>
+        <Stack.Screen name="Splash" component={SplashScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+/*
 
 const App = () => {
   return (
@@ -31,5 +41,7 @@ const App = () => {
     </NavigationContainer>
   );
 };
+
+*/
 
 export default App;

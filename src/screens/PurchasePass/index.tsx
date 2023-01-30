@@ -2,8 +2,11 @@ import React, {useState} from 'react';
 
 import {View} from 'react-native';
 
-import Label from '../../components/atoms/Typography';
-import {Container, StyledContainer} from '../../components/atoms/Container';
+import {Typography} from '../../components';
+import {
+  Container,
+  StyledContainer,
+} from '../../components/atoms/Container/Container';
 
 import TextInput from '../../components/atoms/Input';
 import Button from '../../components/atoms/Button/Contained';
@@ -12,16 +15,16 @@ import {COLORS} from '../../common';
 
 import Icon from '../../components/atoms/Icon';
 
-const PurchasePass = ({navigation}) => {
+const PurchasePass = () => {
   const [passAmount, setPassAmount] = useState(0);
   const pricePassSingle = 1.35;
 
   return (
     <Container padding={30}>
       <StyledContainer direction="row" align="center">
-        <Label color="green-dark" variant="h1">
+        <Typography color="green-dark" variant="h1">
           Deseja realizar uma recarga?
-        </Label>
+        </Typography>
       </StyledContainer>
 
       <View style={{padding: 8}} />
@@ -82,12 +85,12 @@ const ContainerPaymentInformation = ({text, value}) => {
       direction="row"
       justify="space-between"
       color={'white-light'}>
-      <Label variant="body2" color="gray-400">
+      <Typography variant="body2" color="gray-400">
         {text}
-      </Label>
-      <Label variant="body2" color="gray-800">
+      </Typography>
+      <Typography variant="body2" color="gray-800">
         {value}
-      </Label>
+      </Typography>
     </StyledContainer>
   );
 };
@@ -117,17 +120,17 @@ const CreditCartContainer = () => {
 
       <StyledContainer direction="row">
         <StyledContainer>
-          <Label variant="body4" color="green-dark">
+          <Typography variant="body4" color="green-dark">
             Cartão de crédito Visa
-          </Label>
+          </Typography>
           <View style={{padding: 2}} />
-          <Label variant="body2" color="green-dark">
+          <Typography variant="body2" color="green-dark">
             1234 5678 9123 4567
-          </Label>
+          </Typography>
           <View style={{padding: 2}} />
-          <Label variant="body2" color="green-dark">
+          <Typography variant="body2" color="green-dark">
             12/29
-          </Label>
+          </Typography>
         </StyledContainer>
       </StyledContainer>
     </StyledContainer>

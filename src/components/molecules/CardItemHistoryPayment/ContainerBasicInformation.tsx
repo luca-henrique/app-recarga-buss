@@ -1,8 +1,8 @@
 import React from 'react';
-import {StyledContainer} from '../../atoms/Container';
+import {StyledContainer} from '../../atoms/Container/Container';
 import {View} from 'react-native';
 
-import Label from '../../atoms/Typography';
+import Label from '../../atoms/Typography/Typography';
 
 const PriceInformation = ({item}) => {
   return (

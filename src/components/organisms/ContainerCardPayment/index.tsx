@@ -2,11 +2,11 @@ import React from 'react';
 import {COLORS} from '../../../common';
 import {View} from 'react-native';
 import Modal from 'react-native-modal';
-import Label from '../../atoms/Typography';
+import {Typography} from '../../atoms/Typography/Typography';
 
 import Button from '../../atoms/Button/Contained';
 import TextInput from '../../atoms/Input';
-import {StyledContainer} from '../../atoms/Container';
+import {StyledContainer} from '../../atoms/Container/Container';
 
 import {useDispatch, useSelector} from 'react-redux';
 import {
@@ -39,9 +39,9 @@ export default function ContainerBarCode() {
             borderTopRightRadius: 32,
             padding: 30,
           }}>
-          <Label color="gray-800" variant="h3">
+          <Typography color="gray-800" variant="h3">
             Adicionar cartão
-          </Label>
+          </Typography>
 
           <View style={{padding: 10}} />
 

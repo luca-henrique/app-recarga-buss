@@ -1,7 +1,10 @@
 import React, {useState} from 'react';
 import {View} from 'react-native';
-import Label from '../../components/atoms/Typography';
-import {Container, StyledContainer} from '../../components/atoms/Container';
+import {Typography} from '../../components';
+import {
+  Container,
+  StyledContainer,
+} from '../../components/atoms/Container/Container';
 import IconButton from '../../components/atoms/Button/Icon';
 import {COLORS} from '../../common';
 
@@ -66,15 +69,15 @@ function Home({navigation}) {
           width={20}
           justify="space-between"
           align="center">
-          <Label variant="body4" color="green-default">
+          <Typography variant="body4" color="green-default">
             {pageCount}
-          </Label>
-          <Label variant="body4" color="gray-300">
+          </Typography>
+          <Typography variant="body4" color="gray-300">
             de
-          </Label>
-          <Label variant="body4" color="green-default">
+          </Typography>
+          <Typography variant="body4" color="green-default">
             {totalPages}
-          </Label>
+          </Typography>
         </StyledContainer>
 
         <IconButton

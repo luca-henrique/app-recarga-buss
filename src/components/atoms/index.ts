@@ -1,1 +1,2 @@
-export * from './Typography';
+export * from './Typography/Typography';
+export * from './Container/Container';
