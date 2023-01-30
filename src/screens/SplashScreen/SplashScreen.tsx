@@ -7,11 +7,9 @@ import {Typography, LinearGradientContainer} from '../../components';
 export const SplashScreen = () => {
   const {navigation} = useNavigationHook();
 
-  /*
   setTimeout(() => {
-    navigation('SignIn');
+    navigation('SignInScreen');
   }, 3000);
-  */
 
   return (
     <LinearGradientContainer justify="center" align="center">
