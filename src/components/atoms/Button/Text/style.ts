@@ -15,7 +15,6 @@ export const Button = styled.TouchableOpacity<PropsButton>`
 `;
 
 export const Text = styled.Text<PropsText>`
-  font-family: 'DMSans-Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 15px;

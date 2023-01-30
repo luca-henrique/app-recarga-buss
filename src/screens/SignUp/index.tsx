@@ -40,8 +40,8 @@ function SignIn({navigation}) {
   }, [register]);
 
   return (
-    <Container justify="center" padding={30}>
-      <StyledContainer direction="row" align="center">
+    <Container padding={30}>
+      <View style={{flexDirection: 'row', width: '100%', alignItems: 'center'}}>
         <IconButton
           height={21}
           icon="arrow-left-green"
@@ -51,9 +51,7 @@ function SignIn({navigation}) {
         />
         <View style={{padding: 8}} />
         <Label color="green-dark">Criar conta</Label>
-      </StyledContainer>
-
-      <View style={{padding: 30}} />
+      </View>
 
       <TextInput
         label="Instituição de ensino"
@@ -67,7 +65,6 @@ function SignIn({navigation}) {
           initial={0}
           onPress={value => {}}
           buttonColor={'#4EA45D'}
-          buttonWrapStyle={{marginBottom: 20}}
         />
       </StyledContainer>
 

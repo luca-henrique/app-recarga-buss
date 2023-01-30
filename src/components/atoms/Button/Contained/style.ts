@@ -16,7 +16,6 @@ export const Button = styled.TouchableOpacity<PropsButton>`
 `;
 
 export const ButtonText = styled.Text`
-  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 15px;

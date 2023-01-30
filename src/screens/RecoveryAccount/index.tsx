@@ -54,8 +54,8 @@ function SignIn({navigation}) {
   }, [register]);
 
   return (
-    <Container align="center" padding={30}>
-      <StyledContainer direction="row" align="center">
+    <Container align="center" padding={24}>
+      <View style={{flexDirection: 'row', width: '100%', alignItems: 'center'}}>
         <IconButton
           height={21}
           icon="arrow-left-green"
@@ -65,7 +65,7 @@ function SignIn({navigation}) {
         />
         <View style={{padding: 8}} />
         <Label color="green-dark">Recuperar Conta</Label>
-      </StyledContainer>
+      </View>
 
       <TextInput
         label="E-MAIL"
@@ -73,7 +73,7 @@ function SignIn({navigation}) {
         error={errors?.password}
       />
 
-      <View style={{padding: 22}} />
+      <View style={{padding: 14}} />
 
       <Button
         name="Exemple"

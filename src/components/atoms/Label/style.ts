@@ -12,7 +12,6 @@ interface LabelProps {
 export const Label = styled.Text<LabelProps>`
   font-size: ${({fontSize}) => fontSize};
   line-height: ${({lineHeight}) => lineHeight};
-  font-family: ${({fontFamily}) => fontFamily};
   font-weight: ${({fontWight}) => fontWight};
   color: ${({color}) => (color ? `${COLORS[color]}` : COLORS['white-default'])};
 `;

@@ -9,7 +9,6 @@ export const Container = styled.View`
 `;
 
 export const Label = styled.Text`
-  font-family: 'DMSans-Regular';
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -45,7 +44,6 @@ export const Input = styled.TextInput`
 `;
 
 export const TextError = styled.Text`
-  font-family: 'DMSans-Regular';
   font-weight: 500;
   font-size: 12px;
   line-height: 13px;
