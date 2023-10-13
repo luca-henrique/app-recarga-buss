@@ -22,27 +22,4 @@ const App = () => {
   );
 };
 
-/*
-
-const App = () => {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName="Splash"
-        screenOptions={{
-          headerShown: false,
-        }}>
-        <Stack.Screen name="Splash" component={SplashScreen} />
-
-        <Stack.Screen name="SignIn" component={SignIn} />
-        <Stack.Screen name="SignUp" component={SignUp} />
-        <Stack.Screen name="RecoveryAccount" component={RecoveryAccount} />
-        <Stack.Screen name="Dashboard" component={DashboardTabBarNavigation} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-};
-
-*/
-
 export default App;
