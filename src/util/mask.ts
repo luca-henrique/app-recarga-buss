@@ -1,7 +1,7 @@
 // @ts-ignore
-import {MaskService} from 'react-native-masked-text';
+import { MaskService } from 'react-native-masked-text';
 
-import {phoneNumberToObject, removeSpecialCharacters} from './format';
+import { phoneNumberToObject, removeSpecialCharacters } from './format';
 
 export type MaskType = 'phoneNumber';
 
@@ -19,8 +19,8 @@ export const masks: MaskObject = {};
 export const maskedPhoneNumber = (phoneNumber: string) => {
   return phoneNumber
     ? MaskService.toMask('custom', phoneNumber, {
-        mask: BRMask,
-      })
+      mask: BRMask,
+    })
     : '';
 };
 
@@ -76,7 +76,7 @@ export const maskByType = (
     case 'EMAIL':
       return maskEmail(value);
     case 'PHONE':
-      const {DDI, DDD, phone} = phoneNumberToObject(value);
+      const { DDI, DDD, phone } = phoneNumberToObject(value);
       return smilesMaskPhone(phone, DDI, DDD);
     case 'CPF':
     case 'MEMBER':
@@ -85,10 +85,10 @@ export const maskByType = (
 };
 
 export const maskServicePhoneNumber = (flagIndex: {
-  code: {value?: string};
-  ddi: {value?: string};
+  code: { value?: string };
+  ddi: { value?: string };
 }) => {
-  const {code, ddi} = flagIndex;
+  const { code, ddi } = flagIndex;
 
   if (code.value === 'BR') {
     return BRMask;
@@ -105,12 +105,12 @@ export const maskServicePhoneNumber = (flagIndex: {
 
 export const getMaskFromCore = (
   flagIndex: {
-    code: {value?: string};
-    ddi: {value?: string};
+    code: { value?: string };
+    ddi: { value?: string };
   },
   phoneNumber: string,
 ) => {
-  const {code, ddi} = flagIndex;
+  const { code, ddi } = flagIndex;
   let phone;
 
   if (code.value === 'BR') {
@@ -133,11 +133,10 @@ export const setCellphoneMask = (value: string) => {
   const partes = regex.exec(value);
   if (partes) {
     // Usa uma string template literal para construir o valor mascarado.
-    const valorMascarado = `(${partes[1]}) ${
-      partes[2].length === 5
+    const valorMascarado = `(${partes[1]}) ${partes[2].length === 5
         ? `${partes[2][0]} ${partes[2].substr(1)}`
         : `${partes[2]}`
-    } - ${partes[3]}`;
+      } - ${partes[3]}`;
     return valorMascarado;
   } else {
     return value;

@@ -1,10 +1,10 @@
-import {Dimensions, Platform, PixelRatio} from 'react-native';
+import { Dimensions, Platform, PixelRatio } from 'react-native';
 import {
   getBottomSpace,
   isIphoneX as libIsIphoneX,
 } from 'react-native-iphone-x-helper';
-import {getStatusBarHeight as libGetStatusBarHeight} from 'react-native-status-bar-height';
-import {isWeb} from './native';
+import { getStatusBarHeight as libGetStatusBarHeight } from 'react-native-status-bar-height';
+import { isWeb } from './native';
 
 export const isIphoneX = libIsIphoneX;
 

@@ -18,7 +18,7 @@ import {
   isSameDay,
   isBefore,
 } from 'date-fns';
-import {ptBR} from 'date-fns/locale';
+import { ptBR } from 'date-fns/locale';
 
 export const DATE_FORMAT = 'yyyy-MM-dd';
 const dayNames = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
@@ -86,7 +86,7 @@ export const getRemainingSeconds = (targetTime: Date, extraTime = 0) => {
 };
 
 export const formatShortDate = (date: string) =>
-  format(parseISO(date), 'dd MMM', {locale: ptBR});
+  format(parseISO(date), 'dd MMM', { locale: ptBR });
 
 export const parseStringToISODate = (date: string): Date => parseISO(date);
 
@@ -120,7 +120,7 @@ export const formatDateWithLocale = (
   date: Date,
   formatString: string = 'MMM',
 ) => {
-  return format(date, formatString, {locale: ptBR});
+  return format(date, formatString, { locale: ptBR });
 };
 
 export const isAfterDateTime = (firstDate: Date, secondDate: Date) => {
@@ -128,7 +128,7 @@ export const isAfterDateTime = (firstDate: Date, secondDate: Date) => {
 };
 
 export const setTimeOnCurrentDate = (time: TimeObject) => {
-  const {hours = 0, minutes = 0, seconds = 0} = time;
+  const { hours = 0, minutes = 0, seconds = 0 } = time;
   const date = new Date(getCurrentDate());
 
   return addSeconds(addMinutes(addHours(date, hours), minutes), seconds);

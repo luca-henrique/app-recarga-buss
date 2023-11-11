@@ -1,5 +1,5 @@
-import {DefaultTheme} from 'styled-components/native';
-import {colors} from './colors';
+import { DefaultTheme } from 'styled-components/native';
+import { colors } from './colors';
 
 export const defaultTheme: DefaultTheme = {
   colors: {

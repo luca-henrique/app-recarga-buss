@@ -1,4 +1,4 @@
-import {scale} from './dimensions';
+import { scale } from './dimensions';
 
 export const $METRICS = {
   //TopBar

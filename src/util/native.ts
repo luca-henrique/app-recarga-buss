@@ -5,7 +5,7 @@ import {
   AlertButton,
   PlatformOSType,
 } from 'react-native';
-import {getVersion} from 'react-native-device-info';
+import { getVersion } from 'react-native-device-info';
 export function getPlatform(): PlatformOSType {
   return Platform.OS;
 }
@@ -24,7 +24,7 @@ export function isWeb(): boolean {
 export function triggerAlert(
   message: string,
   title = '',
-  buttons: AlertButton[] = [{text: 'Ok'}],
+  buttons: AlertButton[] = [{ text: 'Ok' }],
   options?: AlertOptions,
 ) {
   Alert.alert(title, message, buttons, options);

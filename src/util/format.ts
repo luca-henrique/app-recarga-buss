@@ -98,7 +98,7 @@ export const formatNumberToCurrency = (value: string | number) => {
 
 export const formatNumberToMiles = (
   value: number,
-  {allowDecimalPlaces = false} = {},
+  { allowDecimalPlaces = false } = {},
 ) => {
   return formatNumber(value, {
     decimalPlaces: allowDecimalPlaces ? 2 : 0,
@@ -218,9 +218,8 @@ export const formatHolidays = (
   }
 
   holidays.forEach((item: any) => {
-    const formattedMonth = `${
-      item.start.getMonth() + 1
-    }/${item.start.getFullYear()}`;
+    const formattedMonth = `${item.start.getMonth() + 1
+      }/${item.start.getFullYear()}`;
 
     //@ts-ignore
     if (Object.keys(formattedHolidays).indexOf(formattedMonth) > -1) {
