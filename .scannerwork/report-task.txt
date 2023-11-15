@@ -1,0 +1,6 @@
+projectKey=react-native-recarga-buss
+serverUrl=http://localhost:8082
+serverVersion=10.2.1.78527
+dashboardUrl=http://localhost:8082/dashboard?id=react-native-recarga-buss
+ceTaskId=AYvRHYwuUm0xTCOS6q4P
+ceTaskUrl=http://localhost:8082/api/ce/task?id=AYvRHYwuUm0xTCOS6q4P

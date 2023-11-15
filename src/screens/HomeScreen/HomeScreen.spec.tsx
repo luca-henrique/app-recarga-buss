@@ -1,15 +1,15 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Home } from './Home';
+import { HomeScreen } from './HomeScreen';
 import { render } from '@testing-library/react-native';
 
 describe('render', () => {
   it('first render', () => {
-    renderer.create(<Home />);
+    renderer.create(<HomeScreen />);
   });
 
   it('show text', () => {
-    const { getByText } = render(<Home />);
+    const { getByText } = render(<HomeScreen />);
     const elementText = getByText('Example')
     expect(elementText).toBeTruthy()
   });

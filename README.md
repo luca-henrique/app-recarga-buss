@@ -2,8 +2,8 @@
 
 - [x] - Eslint & Prettier
 - [x] - Gerar coverage do projeto
-- [] - Absolut imports
-- [] - Criar teste simples com jest
+- [x] - Absolut imports
+- [x] - Criar teste simples com jest
 - [] - adicionar bibliotecas para usar svg
 - [] - Alterar splashscreen
 - [] - Configurar husk para commit
