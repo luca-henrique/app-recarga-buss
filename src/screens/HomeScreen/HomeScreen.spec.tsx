@@ -8,7 +8,7 @@ describe('render', () => {
     renderer.create(<HomeScreen />);
   });
 
-  it('show text', () => {
+  it('show text', async () => {
     const { getByText } = render(<HomeScreen />);
     const elementText = getByText('Example')
     expect(elementText).toBeTruthy()

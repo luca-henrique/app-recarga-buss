@@ -1,10 +1,11 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { View } from 'react-native';
+import { Typography } from '~/components';
 
 export const HomeScreen = () => {
   return (
     <View>
-      <Text>Example</Text>
+      <Typography>Example</Typography>
     </View>
   )
 }

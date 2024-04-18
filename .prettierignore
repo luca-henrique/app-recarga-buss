@@ -1,0 +1,35 @@
+# StorieBook
+
+.storybook
+storybook
+storybook-web
+storybook-web-dist
+
+# Sonar
+.scannerwork
+
+#Plataforma
+android
+ios
+
+# Node
+node_modules
+
+# Test
+coverage
+
+# Mock
+__mocks__
+
+# Files Config
+.buckconfig
+.editorconfig
+.eslintignore
+.eslintrc.json
+.gitattributes
+
+# Js Files Config
+babel.config.js
+index.js
+metro.config.js
+rn-cli.config.js
